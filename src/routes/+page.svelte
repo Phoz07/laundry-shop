@@ -1,5 +1,13 @@
-<div class="container mx-auto min-h-screen flex justify-center items-center">
-    <h1 class="text-2xl font-semibold text-center">
-        Laundry Shop
-    </h1>
-</div>
+<script>
+    import Navbar from "$lib/components/Navbar.svelte"
+    import Hero from "$lib/components/Hero.svelte";
+    import Pricing from "$lib/components/Pricing.svelte"
+    import Location from "$lib/components/Location.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+</script>
+
+<Navbar />
+<Hero />
+<Pricing />
+<Location />
+<Footer />
