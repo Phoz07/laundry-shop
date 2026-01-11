@@ -19,23 +19,19 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-7xl mx-auto"
         >
-            <!-- Map Placeholder -->
+            <!-- Map Section -->
             <div
-                class="bg-gradient-to-br from-[#33A1E0]/20 to-[#FFF9AF]/30 rounded-xl sm:rounded-2xl shadow-xl aspect-video sm:aspect-auto sm:min-h-[350px] md:min-h-[400px] flex items-center justify-center order-2 lg:order-1"
+                class="rounded-xl sm:rounded-2xl shadow-xl overflow-hidden aspect-video sm:aspect-auto sm:min-h-[350px] md:min-h-[400px] order-2 lg:order-1"
             >
-                <div class="text-center p-6 sm:p-8">
-                    <MapPin
-                        class="w-16 h-16 sm:w-20 md:w-24 sm:h-20 md:h-24 mx-auto mb-3 sm:mb-4 text-[#33A1E0]"
-                    />
-                    <p
-                        class="text-lg sm:text-xl font-medium text-[#252525] mb-2"
-                    >
-                        แผนที่ตำแหน่งร้าน
-                    </p>
-                    <p class="text-xs sm:text-sm text-[#252525]/70">
-                        (ใส่ Google Maps Embed จริง)
-                    </p>
-                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.0531688919978!2d100.74142137585208!3d13.955439892544662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d79e403c2b4a9%3A0x85059d2bf745cb96!2z4Lij4LmJ4Liy4LiZ4LiL4Lix4LiB4Lij4Li14LiU4Liq4Lih4Li04LiX!5e0!3m2!1sen!2sth!4v1768113468711!5m2!1sen!2sth"
+                    width="100%"
+                    height="100%"
+                    style="border:0; min-height: 350px;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Smith Laundary Location Map"
+                ></iframe>
             </div>
 
             <!-- Contact Info -->
