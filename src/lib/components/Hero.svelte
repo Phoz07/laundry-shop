@@ -12,7 +12,7 @@
 <!-- Hero Section -->
 <section
     id="hero"
-    class="pt-16 sm:pt-20 min-h-screen flex items-center bg-gradient-to-br from-[#33A1E0]/10 to-[#FFF9AF]/20"
+    class="pt-16 sm:pt-20 min-h-screen flex items-center bg-linear-to-br from-[#33A1E0]/10 to-[#FFF9AF]/20"
 >
     <div class="container mx-auto px-4 py-12 sm:py-16 md:py-20">
         <div
@@ -62,20 +62,20 @@
                         class="flex items-center gap-2 justify-center lg:justify-start"
                     >
                         <Clock
-                            class="w-4 h-4 sm:w-5 sm:h-5 text-[#33A1E0] flex-shrink-0"
+                            class="w-4 h-4 sm:w-5 sm:h-5 text-[#33A1E0] shrink-0"
                         />
                         <span class="text-[#252525]/70 text-sm sm:text-base"
-                            >เปิดทุกวัน 08:00-20:00</span
+                            >เปิดทุกวัน 08:00-21:00</span
                         >
                     </div>
                     <div
                         class="flex items-center gap-2 justify-center lg:justify-start"
                     >
                         <Phone
-                            class="w-4 h-4 sm:w-5 sm:h-5 text-[#33A1E0] flex-shrink-0"
+                            class="w-4 h-4 sm:w-5 sm:h-5 text-[#33A1E0] shrink-0"
                         />
                         <span class="text-[#252525]/70 text-sm sm:text-base"
-                            >02-XXX-XXXX</span
+                            >063-657-0399</span
                         >
                     </div>
                 </div>
@@ -84,7 +84,7 @@
             <!-- Image Placeholder -->
             <div class="relative order-first lg:order-last">
                 <div
-                    class="aspect-square bg-gradient-to-br from-[#33A1E0] to-[#2a8bc7] rounded-2xl sm:rounded-3xl shadow-2xl flex items-center justify-center"
+                    class="aspect-square bg-linear-to-br from-[#33A1E0] to-[#2a8bc7] rounded-2xl sm:rounded-3xl shadow-2xl flex items-center justify-center"
                 >
                     <div class="text-center text-white p-4 sm:p-8">
                         <Shirt
@@ -152,7 +152,7 @@
                         </p>
                     </div>
                     <div
-                        class="h-1.5 sm:h-2 bg-gradient-to-r from-[#33A1E0] to-[#2a8bc7]"
+                        class="h-1.5 sm:h-2 bg-linear-to-r from-[#33A1E0] to-[#2a8bc7]"
                     ></div>
                 </div>
             {/each}

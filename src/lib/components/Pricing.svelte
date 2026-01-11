@@ -21,10 +21,9 @@
     ];
 </script>
 
-<!-- Pricing Section -->
 <section
     id="pricing"
-    class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#FFF9AF]/30 to-[#33A1E0]/10"
+    class="py-12 sm:py-16 md:py-20 bg-linear-to-br from-[#FFF9AF]/30 to-[#33A1E0]/10"
 >
     <div class="container mx-auto px-4">
         <div class="text-center mb-10 sm:mb-12 md:mb-16">

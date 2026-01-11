@@ -81,10 +81,10 @@
                     บริการของเรา
                 </h3>
                 <ul class="space-y-2 text-sm sm:text-base text-white/70">
-                    <li>• ซัก + รีด</li>
-                    <li>• รีดอย่างเดียว</li>
-                    <li>• ซักอย่างเดียว</li>
-                    <li>• บริการรับ-ส่ง</li>
+                    <li>ซัก + รีด</li>
+                    <li>รีดอย่างเดียว</li>
+                    <li>ซักอย่างเดียว</li>
+                    <li>บริการรับ-ส่ง</li>
                 </ul>
             </div>
 
@@ -124,18 +124,18 @@
                         class="flex items-center gap-2 justify-center sm:justify-start"
                     >
                         <Phone
-                            class="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0"
+                            class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"
                         />
                         <a
                             href="tel:02-XXX-XXXX"
                             class="hover:text-[#33A1E0] transition-colors"
-                            >02-XXX-XXXX</a
+                            >063-657-0399</a
                         >
                     </p>
                     <p
                         class="flex items-center gap-2 justify-center sm:justify-start"
                     >
-                        <Mail class="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+                        <Mail class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                         <a
                             href="mailto:smith.laundary@example.com"
                             class="hover:text-[#33A1E0] transition-colors break-all"
@@ -152,7 +152,7 @@
             class="border-t border-white/10 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-white/60"
         >
             <p class="mb-1.5 sm:mb-2">
-                © 2024 Smith Laundary. All rights reserved.
+                © 2026 Smith Laundary. All rights reserved.
             </p>
             <p>Made with ❤️ for your clean clothes</p>
         </div>

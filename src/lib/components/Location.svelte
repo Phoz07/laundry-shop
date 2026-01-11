@@ -21,7 +21,7 @@
         >
             <!-- Map Section -->
             <div
-                class="rounded-xl sm:rounded-2xl shadow-xl overflow-hidden aspect-video sm:aspect-auto sm:min-h-[350px] md:min-h-[400px] order-2 lg:order-1"
+                class="rounded-xl sm:rounded-2xl shadow-xl overflow-hidden aspect-video sm:aspect-auto sm:min-h-87.5 md:min-h-100 order-2 lg:order-1"
             >
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.0531688919978!2d100.74142137585208!3d13.955439892544662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d79e403c2b4a9%3A0x85059d2bf745cb96!2z4Lij4LmJ4Liy4LiZ4LiL4Lix4LiB4Lij4Li14LiU4Liq4Lih4Li04LiX!5e0!3m2!1sen!2sth!4v1768113468711!5m2!1sen!2sth"
@@ -37,7 +37,7 @@
             <!-- Contact Info -->
             <div class="space-y-4 sm:space-y-6 order-1 lg:order-2">
                 <div
-                    class="bg-gradient-to-br from-[#33A1E0] to-[#2a8bc7] text-white p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl"
+                    class="bg-linear-to-br from-[#33A1E0] to-[#2a8bc7] text-white p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-xl h-full"
                 >
                     <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
                         ข้อมูลติดต่อ
@@ -45,27 +45,27 @@
                     <div class="space-y-4 sm:space-y-5">
                         <div class="flex items-start gap-3 sm:gap-4">
                             <MapPin
-                                class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5 sm:mt-1"
+                                class="w-5 h-5 sm:w-6 sm:h-6 shrink-0 mt-0.5 sm:mt-1"
                             />
                             <div>
                                 <p
                                     class="font-medium mb-1 text-sm sm:text-base"
                                 >
-                                    ที่อยู่
+                                    50/233 หมู่ที่ 4 หมู่บ้านแพรมาพร
                                 </p>
                                 <p
                                     class="opacity-90 text-sm sm:text-base leading-relaxed"
                                 >
-                                    123 ถนนตัวอย่าง แขวง/ตำบล เขต/อำเภอ<br
+                                    ต.บึงคำพร้อย อ.ลำลูกกา<br
                                         class="hidden sm:inline"
                                     />
-                                    จังหวัด 10XXX
+                                    จ.ปทุมธานี 12150
                                 </p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 sm:gap-4">
                             <Phone
-                                class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5 sm:mt-1"
+                                class="w-5 h-5 sm:w-6 sm:h-6 shrink-0 mt-0.5 sm:mt-1"
                             />
                             <div>
                                 <p
@@ -76,37 +76,18 @@
                                 <p class="opacity-90 text-sm sm:text-base">
                                     <a
                                         href="tel:02-XXX-XXXX"
-                                        class="hover:underline">02-XXX-XXXX</a
+                                        class="hover:underline">063-657-0399</a
                                     >,
                                     <a
                                         href="tel:08X-XXX-XXXX"
-                                        class="hover:underline">08X-XXX-XXXX</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3 sm:gap-4">
-                            <Mail
-                                class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5 sm:mt-1"
-                            />
-                            <div>
-                                <p
-                                    class="font-medium mb-1 text-sm sm:text-base"
-                                >
-                                    อีเมล
-                                </p>
-                                <p class="opacity-90 text-sm sm:text-base">
-                                    <a
-                                        href="mailto:smith.laundary@example.com"
-                                        class="hover:underline break-all"
-                                        >smith.laundary@example.com</a
+                                        class="hover:underline">088-921-5124</a
                                     >
                                 </p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 sm:gap-4">
                             <Clock
-                                class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5 sm:mt-1"
+                                class="w-5 h-5 sm:w-6 sm:h-6 shrink-0 mt-0.5 sm:mt-1"
                             />
                             <div>
                                 <p
@@ -115,21 +96,21 @@
                                     เวลาทำการ
                                 </p>
                                 <p class="opacity-90 text-sm sm:text-base">
-                                    จันทร์ - อาทิตย์: 08:00 - 20:00
+                                    จันทร์ - อาทิตย์: 08:00 - 21:00
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-[#FFF9AF] p-4 sm:p-6 rounded-xl sm:rounded-2xl">
+                <!-- <div class="bg-[#FFF9AF] p-4 sm:p-6 rounded-xl sm:rounded-2xl">
                     <p
                         class="text-[#252525] font-medium text-center text-sm sm:text-base leading-relaxed"
                     >
                         🚗 มีที่จอดรถสะดวกสบาย<br />
                         🚇 ใกล้สถานี MRT/BTS (ตัวอย่าง)
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -138,7 +119,7 @@
 <!-- Contact/CTA Section -->
 <section
     id="contact"
-    class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#33A1E0] to-[#2a8bc7]"
+    class="py-12 sm:py-16 md:py-20 bg-linear-to-br from-[#33A1E0] to-[#2a8bc7]"
 >
     <div class="container mx-auto px-4 text-center">
         <h2
