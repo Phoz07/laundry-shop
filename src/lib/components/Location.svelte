@@ -1,5 +1,6 @@
 <script lang="ts">
     import { MapPin, Phone, Mail, Clock } from "@lucide/svelte";
+    import Button from "$lib/components/ui/button/button.svelte";
 </script>
 
 <!-- Location Section -->
@@ -75,11 +76,11 @@
                                 </p>
                                 <p class="opacity-90 text-sm sm:text-base">
                                     <a
-                                        href="tel:02-XXX-XXXX"
+                                        href="tel:063-657-0399"
                                         class="hover:underline">063-657-0399</a
                                     >,
                                     <a
-                                        href="tel:08X-XXX-XXXX"
+                                        href="tel:088-921-5124"
                                         class="hover:underline">088-921-5124</a
                                     >
                                 </p>
@@ -135,25 +136,27 @@
         <div
             class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md mx-auto sm:max-w-none"
         >
-            <a
-                href="tel:02-XXX-XXXX"
-                class="bg-white text-[#33A1E0] px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-[#FFF9AF] transition-all hover:shadow-lg font-medium text-base sm:text-lg inline-flex items-center justify-center gap-2"
+            <Button
+                href="tel:063-657-0399"
+                variant="secondary"
+                class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto h-auto"
             >
                 <Phone class="w-5 h-5" />
                 <span>โทรติดต่อเลย</span>
-            </a>
-            <button
+            </Button>
+            <Button
                 onclick={() => {
                     const element = document.getElementById("location");
                     if (element) {
                         element.scrollIntoView({ behavior: "smooth" });
                     }
                 }}
-                class="bg-[#FFF9AF] text-[#252525] px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-yellow-200 transition-all hover:shadow-lg font-medium text-base sm:text-lg inline-flex items-center justify-center gap-2"
+                variant="outline"
+                class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto h-auto"
             >
                 <MapPin class="w-5 h-5" />
                 <span>ดูแผนที่</span>
-            </button>
+            </Button>
         </div>
     </div>
 </section>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Sparkles, Phone, Clock, Shirt } from "@lucide/svelte";
+    import Button from "$lib/components/ui/button/button.svelte";
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -42,18 +43,19 @@
                 <div
                     class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
                 >
-                    <button
+                    <Button
                         onclick={() => scrollToSection("pricing")}
-                        class="bg-[#33A1E0] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-[#2a8bc7] transition-all hover:shadow-lg font-medium text-base sm:text-lg w-full sm:w-auto"
+                        class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto h-auto"
                     >
                         ดูราคาบริการ
-                    </button>
-                    <button
+                    </Button>
+                    <Button
                         onclick={() => scrollToSection("contact")}
-                        class="bg-white text-[#33A1E0] px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-[#FFF9AF] transition-all hover:shadow-lg font-medium text-base sm:text-lg border-2 border-[#33A1E0] w-full sm:w-auto"
+                        variant="outline"
+                        class="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto h-auto"
                     >
                         ติดต่อเรา
-                    </button>
+                    </Button>
                 </div>
                 <div
                     class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 pt-4 sm:pt-6 justify-center lg:justify-start"

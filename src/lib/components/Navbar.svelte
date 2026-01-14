@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Sparkles, Menu, X } from "@lucide/svelte";
+    import Button from "$lib/components/ui/button/button.svelte";
 
     let scrollY = $state(0);
     let mobileMenuOpen = $state(false);
@@ -29,15 +30,16 @@
     <div class="container mx-auto px-4 py-3 sm:py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
-            <button
+            <Button
                 onclick={() => scrollToSection("hero")}
-                class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                variant="ghost"
+                class="flex items-center gap-2 hover:opacity-80 transition-opacity h-auto p-0"
             >
                 <Sparkles class="w-6 h-6 sm:w-8 sm:h-8 text-[#33A1E0]" />
                 <span class="text-lg sm:text-2xl font-bold text-[#252525]"
                     >Smith Laundary</span
                 >
-            </button>
+            </Button>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-4 lg:gap-6">
@@ -65,18 +67,20 @@
                 >
                     ที่ตั้ง
                 </button>
-                <button
+                <Button
                     onclick={() => scrollToSection("contact")}
-                    class="bg-[#33A1E0] text-white px-4 lg:px-6 py-2 rounded-lg hover:bg-[#2a8bc7] transition-colors font-medium text-sm lg:text-base"
+                    class="px-4 lg:px-6 py-2 font-medium text-sm lg:text-base"
                 >
                     ติดต่อเรา
-                </button>
+                </Button>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button
+            <Button
                 onclick={toggleMobileMenu}
-                class="md:hidden text-[#252525] p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                variant="ghost"
+                size="icon"
+                class="md:hidden text-[#252525] hover:bg-gray-100 transition-colors"
                 aria-label="Toggle menu"
             >
                 {#if mobileMenuOpen}
@@ -84,7 +88,7 @@
                 {:else}
                     <Menu class="w-6 h-6" />
                 {/if}
-            </button>
+            </Button>
         </div>
 
         <!-- Mobile Menu -->
@@ -95,34 +99,34 @@
                 <div class="flex flex-col gap-3">
                     <button
                         onclick={() => scrollToSection("hero")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 rounded-lg text-left"
+                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
                     >
                         หน้าแรก
                     </button>
                     <button
                         onclick={() => scrollToSection("services")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 rounded-lg text-left"
+                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
                     >
                         บริการ
                     </button>
                     <button
                         onclick={() => scrollToSection("pricing")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 rounded-lg text-left"
+                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
                     >
                         ราคา
                     </button>
                     <button
                         onclick={() => scrollToSection("location")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 rounded-lg text-left"
+                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
                     >
                         ที่ตั้ง
                     </button>
-                    <button
+                    <Button
                         onclick={() => scrollToSection("contact")}
-                        class="bg-[#33A1E0] text-white px-4 py-3 rounded-lg hover:bg-[#2a8bc7] transition-colors font-medium text-center"
+                        class="px-4 py-3 font-medium text-center"
                     >
                         ติดต่อเรา
-                    </button>
+                    </Button>
                 </div>
             </div>
         {/if}

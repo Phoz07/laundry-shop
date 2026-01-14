@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Sparkles, Facebook, Instagram, Phone, Mail } from "@lucide/svelte";
+    import Button from "$lib/components/ui/button/button.svelte";
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -39,36 +40,40 @@
                 </h3>
                 <ul class="space-y-2 text-sm sm:text-base">
                     <li>
-                        <button
+                        <Button
                             onclick={() => scrollToSection("hero")}
-                            class="hover:text-[#33A1E0] transition-colors inline-block"
+                            variant="ghost"
+                            class="hover:text-[#33A1E0] transition-colors inline-block h-auto p-0"
                         >
                             หน้าแรก
-                        </button>
+                        </Button>
                     </li>
                     <li>
-                        <button
+                        <Button
                             onclick={() => scrollToSection("services")}
-                            class="hover:text-[#33A1E0] transition-colors inline-block"
+                            variant="ghost"
+                            class="hover:text-[#33A1E0] transition-colors inline-block h-auto p-0"
                         >
                             บริการ
-                        </button>
+                        </Button>
                     </li>
                     <li>
-                        <button
+                        <Button
                             onclick={() => scrollToSection("pricing")}
-                            class="hover:text-[#33A1E0] transition-colors inline-block"
+                            variant="ghost"
+                            class="hover:text-[#33A1E0] transition-colors inline-block h-auto p-0"
                         >
                             ราคา
-                        </button>
+                        </Button>
                     </li>
                     <li>
-                        <button
+                        <Button
                             onclick={() => scrollToSection("location")}
-                            class="hover:text-[#33A1E0] transition-colors inline-block"
+                            variant="ghost"
+                            class="hover:text-[#33A1E0] transition-colors inline-block h-auto p-0"
                         >
                             ที่ตั้ง
-                        </button>
+                        </Button>
                     </li>
                 </ul>
             </div>
@@ -123,11 +128,9 @@
                     <p
                         class="flex items-center gap-2 justify-center sm:justify-start"
                     >
-                        <Phone
-                            class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"
-                        />
+                        <Phone class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                         <a
-                            href="tel:02-XXX-XXXX"
+                            href="tel:063-657-0399"
                             class="hover:text-[#33A1E0] transition-colors"
                             >063-657-0399</a
                         >
