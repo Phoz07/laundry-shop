@@ -4,10 +4,19 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+    font-family: 'Misans';
+    src: url('./src/lib/assets/fonts/MiSans VF.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Misans', sans-serif;
+}
+
 :root {
     --radius: 0.625rem;
 
-    /* Custom color scheme for Smith Laundary */
     --white: #ffffff;
     --primary: #33a1e0;
     --secondary: #fff9af;
