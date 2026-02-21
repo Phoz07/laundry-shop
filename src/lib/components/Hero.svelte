@@ -15,44 +15,44 @@
     id="hero"
     class="pt-20 sm:pt-24 md:pt-28 min-h-screen flex items-center bg-linear-to-br from-[#33A1E0]/10 to-[#FFF9AF]/20 safe-top"
 >
-    <div class="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24">
+    <div class="container mx-auto px-3 sm:px-4 lg:px-6 py-8 sm:py-12 md:py-16 lg:py-20">
         <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center"
         >
             <!-- Text Content -->
-            <div class="space-y-6 sm:space-y-8 text-center lg:text-left">
+            <div class="space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left">
                 <div
-                    class="inline-block bg-[#FFF9AF] px-4 sm:px-6 py-2 sm:py-3 rounded-full"
+                    class="inline-block bg-[#FFF9AF] px-3 sm:px-4 lg:px-6 py-1.5 sm:py-2 lg:py-3 rounded-full"
                 >
                     <span
-                        class="text-[#252525] font-medium text-sm sm:text-base lg:text-lg"
+                        class="text-[#252525] font-medium text-xs sm:text-sm lg:text-base"
                         >✨ บริการซักรีดคุณภาพ</span
                     >
                 </div>
                 <h1
-                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#252525] leading-tight tracking-tight"
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#252525] leading-tight tracking-tight"
                 >
                     Smith Laundary
                 </h1>
                 <p
-                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#252525]/80 leading-relaxed max-w-3xl mx-auto lg:mx-0"
+                    class="text-base sm:text-lg md:text-xl lg:text-2xl text-[#252525]/80 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                 >
                     ร้านซักรีดเสื้อผ้าที่ให้บริการด้วยความใส่ใจ ผ้าสะอาด หอม
                     นุ่ม พร้อมส่งมอบความสดใสให้กับทุกชิ้นผ้าของคุณ
                 </p>
                 <div
-                    class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start"
+                    class="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center lg:justify-start"
                 >
                     <Button
                         onclick={() => scrollToSection("pricing")}
-                        class="px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-lg sm:text-xl lg:text-2xl w-full sm:w-auto h-auto min-h-[52px] sm:min-h-[56px]"
+                        class="px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 text-base sm:text-lg lg:text-xl w-full sm:w-auto h-auto min-h-[44px] sm:min-h-[48px] lg:min-h-[52px]"
                     >
                         ดูราคาบริการ
                     </Button>
                     <Button
                         onclick={() => scrollToSection("contact")}
                         variant="outline"
-                        class="px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 text-lg sm:text-xl lg:text-2xl w-full sm:w-auto h-auto min-h-[52px] sm:min-h-[56px]"
+                        class="px-5 sm:px-7 lg:px-9 py-2.5 sm:py-3.5 lg:py-4.5 text-sm sm:text-base lg:text-lg w-full sm:w-auto h-auto min-h-[44px] sm:min-h-[48px] lg:min-h-[52px]"
                     >
                         ติดต่อเรา
                     </Button>
@@ -77,7 +77,7 @@
                             class="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#33A1E0] shrink-0"
                         />
                         <span class="text-[#252525]/70 text-base sm:text-lg lg:text-xl"
-                            >063-657-0399</span
+                            >063-657-0399, 088-921-5124</span
                         >
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                 <div
                     class="aspect-square lg:aspect-[4/3] bg-linear-to-br from-[#33A1E0] to-[#2a8bc7] rounded-2xl sm:rounded-3xl lg:rounded-4xl shadow-2xl flex items-center justify-center overflow-hidden"
                 >
-                    <div class="text-center text-white p-6 sm:p-8 lg:p-12">
+                    <!-- <div class="text-center text-white p-6 sm:p-8 lg:p-12">
                         <Shirt
                             class="w-20 h-20 sm:w-24 md:w-32 lg:w-40 sm:h-24 md:h-32 lg:h-40 mx-auto mb-4 sm:mb-6 lg:mb-8 opacity-50"
                         />
@@ -98,7 +98,12 @@
                         <p class="text-sm sm:text-base lg:text-lg opacity-80">
                             (แทนด้วยรูปจริง)
                         </p>
-                    </div>
+                    </div> -->
+                    <img
+                        src="/images/result1.png"
+                        alt="Result"
+                        class="w-full h-full object-cover"
+                    />
                 </div>
                 <!-- Floating Elements -->
                 <div

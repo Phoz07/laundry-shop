@@ -5,49 +5,51 @@
 
 <!-- Location Section -->
 <section id="location" class="py-16 sm:py-20 md:py-24 lg:py-32 bg-white">
-    <div class="container mx-auto px-4 sm:px-6">
-        <div class="text-center mb-12 sm:mb-16 md:mb-20">
+    <div class="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div class="text-center mb-8 sm:mb-12 md:mb-16">
             <h2
-                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#252525] mb-4 sm:mb-6 lg:mb-8"
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#252525] mb-3 sm:mb-4 lg:mb-6"
             >
                 ที่ตั้งร้าน
             </h2>
-            <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#252525]/70 max-w-3xl mx-auto">
+            <p
+                class="text-base sm:text-lg md:text-xl lg:text-2xl text-[#252525]/70 max-w-3xl mx-auto"
+            >
                 มาพบเราได้ที่นี่
             </p>
         </div>
 
         <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 max-w-7xl mx-auto"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-7xl mx-auto"
         >
             <!-- Map Section -->
             <div
-                class="rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden aspect-video lg:aspect-[4/3] min-h-[350px] sm:min-h-[400px] lg:min-h-[500px] order-2 lg:order-1"
+                class="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-lg overflow-hidden order-2 lg:order-1
+    aspect-video lg:aspect-[4/3]"
             >
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.0531688919978!2d100.74142137585208!3d13.955439892544662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d79e403c2b4a9%3A0x85059d2bf745cb96!2z4Lij4LmJ4Liy4LiZ4LiL4Lix4LiB4Lij4Li14LiU4Liq4Lih4Li04LiX!5e0!3m2!1sen!2sth!4v1768113468711!5m2!1sen!2sth"
-                    width="100%"
-                    height="100%"
-                    style="border:0; min-height: 350px;"
+                    class="absolute inset-0 w-full h-full border-0"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     title="Smith Laundary Location Map"
-                    class="w-full h-full"
                 ></iframe>
             </div>
 
             <!-- Contact Info -->
-            <div class="space-y-6 sm:space-y-8 order-1 lg:order-2">
+            <div class="space-y-4 sm:space-y-6 lg:space-y-8 order-1 lg:order-2">
                 <div
-                    class="bg-linear-to-br from-[#33A1E0] to-[#2a8bc7] text-white p-8 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-xl h-full"
+                    class="bg-linear-to-br from-[#33A1E0] to-[#2a8bc7] text-white p-6 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-lg h-full"
                 >
-                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
+                    <h3
+                        class="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6"
+                    >
                         ข้อมูลติดต่อ
                     </h3>
-                    <div class="space-y-6 sm:space-y-8">
-                        <div class="flex items-start gap-4 sm:gap-6">
+                    <div class="space-y-4 sm:space-y-6">
+                        <div class="flex items-start gap-3 sm:gap-4">
                             <MapPin
-                                class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 shrink-0 mt-1"
+                                class="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 shrink-0 mt-1"
                             />
                             <div>
                                 <p
@@ -76,16 +78,22 @@
                                     โทรศัพท์
                                 </p>
                                 <div class="space-y-1">
-                                    <p class="opacity-90 text-base sm:text-lg lg:text-xl">
+                                    <p
+                                        class="opacity-90 text-base sm:text-lg lg:text-xl"
+                                    >
                                         <a
                                             href="tel:063-657-0399"
-                                            class="hover:underline transition-colors">063-657-0399</a
+                                            class="hover:underline transition-colors"
+                                            >063-657-0399</a
                                         >
                                     </p>
-                                    <p class="opacity-90 text-base sm:text-lg lg:text-xl">
+                                    <p
+                                        class="opacity-90 text-base sm:text-lg lg:text-xl"
+                                    >
                                         <a
                                             href="tel:088-921-5124"
-                                            class="hover:underline transition-colors">088-921-5124</a
+                                            class="hover:underline transition-colors"
+                                            >088-921-5124</a
                                         >
                                     </p>
                                 </div>
@@ -101,7 +109,9 @@
                                 >
                                     เวลาทำการ
                                 </p>
-                                <p class="opacity-90 text-base sm:text-lg lg:text-xl">
+                                <p
+                                    class="opacity-90 text-base sm:text-lg lg:text-xl"
+                                >
                                     จันทร์ - อาทิตย์: 08:00 - 21:00
                                 </p>
                             </div>

@@ -192,7 +192,7 @@
                         <a
                             href="tel:063-657-0399"
                             class="hover:text-[#33A1E0] transition-colors"
-                            >063-657-0399</a
+                            >063-657-0399, 088-921-5124</a
                         >
                     </p>
                     <p

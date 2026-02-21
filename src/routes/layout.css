@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Misans';
-    src: url('./src/lib/assets/fonts/MiSans VF.ttf') format('truetype');
+    src: url('/fonts/MiSans VF.ttf') format('truetype');
     font-style: normal;
 }
 
