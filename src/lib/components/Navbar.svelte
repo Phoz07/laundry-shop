@@ -13,21 +13,23 @@
         }
     };
 
-    const toggleMobileMenu = () => {
-        mobileMenuOpen = !mobileMenuOpen;
-    };
+    const navItems = [
+        { id: "hero", label: "หน้าแรก" },
+        { id: "services", label: "บริการ" },
+        { id: "pricing", label: "ราคา" },
+        { id: "location", label: "ที่ตั้ง" },
+    ];
 </script>
 
 <svelte:window bind:scrollY />
 
-<!-- Navbar -->
 <nav
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {scrollY >
-    50
-        ? 'bg-white shadow-md'
+    class="fixed top-0 left-0 right-0 z-30 transition-all duration-300
+        {scrollY > 50
+        ? 'bg-white shadow-lg border-b border-gray-100'
         : 'bg-white/95 backdrop-blur-sm'}"
 >
-    <div class="container mx-auto px-4 py-3 sm:py-4">
+    <div class="container mx-auto px-4 lg:px-6 py-3 lg:py-4">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <Button
@@ -35,53 +37,39 @@
                 variant="ghost"
                 class="flex items-center gap-2 hover:opacity-80 transition-opacity h-auto p-0"
             >
-                <Sparkles class="w-6 h-6 sm:w-8 sm:h-8 text-[#33A1E0]" />
-                <span class="text-lg sm:text-2xl font-bold text-[#252525]"
+                <Sparkles class="w-6 h-6 lg:w-8 lg:h-8 text-[#33A1E0]" />
+                <span class="text-lg lg:text-2xl font-bold text-[#252525]"
                     >Smith Laundary</span
                 >
             </Button>
 
             <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center gap-4 lg:gap-6">
-                <button
-                    onclick={() => scrollToSection("hero")}
-                    class="text-[#252525] hover:text-[#33A1E0] transition-colors font-medium text-sm lg:text-base"
-                >
-                    หน้าแรก
-                </button>
-                <button
-                    onclick={() => scrollToSection("services")}
-                    class="text-[#252525] hover:text-[#33A1E0] transition-colors font-medium text-sm lg:text-base"
-                >
-                    บริการ
-                </button>
-                <button
-                    onclick={() => scrollToSection("pricing")}
-                    class="text-[#252525] hover:text-[#33A1E0] transition-colors font-medium text-sm lg:text-base"
-                >
-                    ราคา
-                </button>
-                <button
-                    onclick={() => scrollToSection("location")}
-                    class="text-[#252525] hover:text-[#33A1E0] transition-colors font-medium text-sm lg:text-base"
-                >
-                    ที่ตั้ง
-                </button>
+            <div class="hidden md:flex items-center gap-4 xl:gap-6">
+                {#each navItems as item}
+                    <Button
+                        onclick={() => scrollToSection(item.id)}
+                        variant="ghost"
+                        class="text-[#252525] hover:text-[#33A1E0] transition-colors font-medium"
+                    >
+                        {item.label}
+                    </Button>
+                {/each}
                 <Button
                     onclick={() => scrollToSection("contact")}
-                    class="px-4 lg:px-6 py-2 font-medium text-sm lg:text-base"
+                    class="font-medium"
                 >
                     ติดต่อเรา
                 </Button>
             </div>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Hamburger -->
             <Button
-                onclick={toggleMobileMenu}
+                onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
                 variant="ghost"
                 size="icon"
-                class="md:hidden text-[#252525] hover:bg-gray-100 transition-colors"
+                class="md:hidden text-[#252525] hover:bg-gray-100 min-h-[44px] min-w-[44px]"
                 aria-label="Toggle menu"
+                aria-expanded={mobileMenuOpen}
             >
                 {#if mobileMenuOpen}
                     <X class="w-6 h-6" />
@@ -90,45 +78,31 @@
                 {/if}
             </Button>
         </div>
+    </div>
 
-        <!-- Mobile Menu -->
-        {#if mobileMenuOpen}
-            <div
-                class="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4 animate-in slide-in-from-top-2 duration-300"
+    <!-- Mobile Dropdown — slide down ใต้ navbar -->
+    <div
+        class="md:hidden overflow-hidden transition-all duration-300 ease-in-out
+            {mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}"
+    >
+        <div
+            class="border-t border-gray-100 bg-white px-4 pb-4 pt-2 flex flex-col gap-1"
+        >
+            {#each navItems as item}
+                <Button
+                    onclick={() => scrollToSection(item.id)}
+                    variant="ghost"
+                    class="w-full justify-start text-left px-4 py-3 text-base font-medium text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 rounded-lg min-h-[52px]"
+                >
+                    {item.label}
+                </Button>
+            {/each}
+            <Button
+                onclick={() => scrollToSection("contact")}
+                class="w-full mt-2 py-3 text-base font-medium min-h-[52px] bg-[#33A1E0] hover:bg-[#2a8bc7] text-white"
             >
-                <div class="flex flex-col gap-3">
-                    <button
-                        onclick={() => scrollToSection("hero")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
-                    >
-                        หน้าแรก
-                    </button>
-                    <button
-                        onclick={() => scrollToSection("services")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
-                    >
-                        บริการ
-                    </button>
-                    <button
-                        onclick={() => scrollToSection("pricing")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
-                    >
-                        ราคา
-                    </button>
-                    <button
-                        onclick={() => scrollToSection("location")}
-                        class="text-[#252525] hover:text-[#33A1E0] hover:bg-gray-50 transition-colors font-medium py-3 px-4 text-left justify-start"
-                    >
-                        ที่ตั้ง
-                    </button>
-                    <Button
-                        onclick={() => scrollToSection("contact")}
-                        class="px-4 py-3 font-medium text-center"
-                    >
-                        ติดต่อเรา
-                    </Button>
-                </div>
-            </div>
-        {/if}
+                ติดต่อเรา
+            </Button>
+        </div>
     </div>
 </nav>
